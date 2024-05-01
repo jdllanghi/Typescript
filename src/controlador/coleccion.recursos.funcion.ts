@@ -1,5 +1,7 @@
 // src/utils/resource.collection.ts
 
+import { escape } from "querystring";
+
 class ColeccionRecursos<T> {
     private recursos: T[] = [];
   
@@ -12,6 +14,6 @@ class ColeccionRecursos<T> {
       return this.recursos;
     }
   }
+  escape
   
   export { ColeccionRecursos };
-  
