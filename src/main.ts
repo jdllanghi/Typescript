@@ -1,7 +1,7 @@
 // src/main.ts
 
 import  Nave_Espacial  from "./vista/nave.espacial";
-import { Planeta, TipoDeRecurso } from "./modelo/planeta";
+import { Planeta, TipoDeRecurso } from "./modelo/planet";
 import { Evento, TipoDeEvento } from "./modelo/evento";
 import { navegar } from "./controlador/exploracion.funcion";
 import { ColeccionRecursos } from "./controlador/coleccion.recursos.funcion";
@@ -16,10 +16,12 @@ const mySpaceship: Nave_Espacial = {
   velocidad: 10,
 };
 
+
+
 // Creacion de planetas
-const tierra = new Planeta("Tierra", TipoDeRecurso.Agua, 2);
+const tierra = new Planeta("Tierra", TipoDeRecurso.GasesNobles, 2);
 const marte = new Planeta("Marte", TipoDeRecurso.Oxigeno, 5);
-const luna = new Planeta("Luna", TipoDeRecurso.Minerales, 1);
+const luna = new Planeta("Luna", TipoDeRecurso. CristalesEnergéticos, 1);
 
 // Explorar algunos planetas
 tierra.explore();

@@ -1,4 +1,4 @@
-import { Planeta } from "../modelo/planeta";
+import { Planeta } from "../modelo/planet";
 
 function entradaUsuario(planetas: Planeta[]): Planeta {
     const readlineSync = require('readline-sync');
